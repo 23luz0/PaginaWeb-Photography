@@ -1,0 +1,94 @@
+.contact__container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__contact{
+    height: 650px;
+    width: 900px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.container__image{
+    object-fit: cover;
+
+}
+.gif__img{
+    height: 100%;
+    width: 100%;
+
+}
+.container__form{
+    background-color: #00171f;
+    border-radius: 10px;
+    padding: 10px;
+    
+
+}
+.h1__form{
+    color: #00a8e8;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.cajas{
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: white;
+    margin-bottom: 10px;
+    padding: 15px  0;
+
+}
+
+input, textarea{
+    width: 80%;
+    margin-left: 45px;
+    height: auto;
+    border-radius: 5px;
+    bottom: none;
+    padding: 10px;
+    font-size: 15px;
+    color: #00a8e8;
+
+}
+.input,textarea:focus{
+    right: none;
+    outline: none;
+    left: none;
+    top: none;
+    bottom:none;
+
+}
+.submit:hover{
+    background-color: #00a8e8;
+    color: #0017;
+
+}
+
+/*falta mejorar el css para mobile*/
+/*============================= media query (mobile)===============================*/
+@media screen and (max-width: 600px) {
+    .container__image {
+        width: 50%;
+        margin: 0 auto;
+        height: auto;
+        place-items: center;  
+    }
+
+    
+    .container__contact{
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        
+        
+    }
+}
